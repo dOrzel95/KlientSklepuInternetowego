@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact {
+  display: block;
+  position: relative;
+}
+.contact h3 {
+  padding: 3rem 0;
+  font-size: 2rem;
+}
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.form input,
+.form .message-content {
+  width: 80%;
+  padding: 10px 20px;
+  margin-bottom: 4%;
+  border: 0.1rem solid black;
+}
+.message-content {
+  height: 15vh;
+}
+.form .send-button {
+  display: block;
+  padding: 8px 20px;
+  border: 0.1rem solid black;
+}
+@media (min-width: 568px) {
+  .form input,
+  .form .message-content {
+    margin-bottom: 1%;
+  }
+  .message-content {
+    height: 30vh;
+  }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  .form input,
+  .form .message-content {
+    margin-bottom: 4%;
+  }
+  .message-content {
+    height: 20vh;
+  }
+}
+@media (min-width: 1024px) {
+  .contact {
+    padding-top: 10%;
+  }
+  .form {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 3%;
+  }
+  .form input {
+    width: 45%;
+    position: relative;
+    margin-bottom: 4%;
+  }
+  .form .input-name {
+    margin-left: 10%;
+  }
+  .form .message-content {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-bottom: 4%;
+  }
+
+  .form .send-button {
+    position: relative;
+    padding: 10px 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 1024px) and (orientation: portrait) {
+  .contact {
+    padding-top: 20%;
+  }
+  .form {
+    width: 70%;
+  }
+  .form {
+    height: 40vh;
+  }
+  .form .message-content {
+    height: 70%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .contact h3 {
+    font-size: 3rem;
+  }
+}

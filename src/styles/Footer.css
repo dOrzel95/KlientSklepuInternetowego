@@ -1,0 +1,77 @@
+footer {
+  position: relative;
+  background-color: transparent;
+  margin-top: 10%;
+  background-color: black;
+  color: white;
+}
+/*</div>
+<div className="data">
+  <ul className="ul-data">{dataPerson}</ul>
+</div>
+<div className="links">
+  <ul className="ul-special"></ul>
+</div>
+</div> */
+
+.information-footer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+}
+.information-footer .social-media {
+  width: 100%;
+  margin: 10% 0;
+}
+.information-footer .social-media h3 {
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+}
+.information-footer .data {
+  width: 100%;
+  margin: 10% 0;
+}
+.information-footer .data h3 {
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+}
+.information-footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.information-footer .data .ul-data li {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.information-footer .data .ul-data {
+  height: 15vh;
+}
+.information-footer .social-media .ul-social-media li {
+  font-size: 2.7rem;
+}
+@media (min-width: 568px) {
+  .information-footer {
+    flex-wrap: nowrap;
+  }
+  .information-footer .data .ul-data {
+    height: 50%;
+  }
+
+  .information-footer .data,
+  .information-footer .social-media {
+    margin: 5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .information-footer .data,
+  .information-footer .social-media {
+    margin: 5%;
+  }
+}

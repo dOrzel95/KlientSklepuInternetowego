@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .users{
+    display: flex;
+    position: relative;
+    margin: 15% 5%;
+    margin-bottom: 5%;
+
+    justify-content: center;
+  }
+  .users ul{
+    display: flex;
+    margin: 2% 0;
+    flex-direction: column;
+    width: 60%;
+}
+  .users ul li{
+    display: flex;
+    position: relative;
+    padding: 1% 1%;
+    border-bottom: 2px solid black;
+  }
+  .users ul li label{
+    
+    text-align: left;  
+    width: 50%;
+}
+.users ul li .buttons{
+    display: flex;
+}
+.users ul li .buttons button{
+    margin-right: 10%;
+    padding: 3% 6%;
+    color: white;
+    background-color:black;
+}

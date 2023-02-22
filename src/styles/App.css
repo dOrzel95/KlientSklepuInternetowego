@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}

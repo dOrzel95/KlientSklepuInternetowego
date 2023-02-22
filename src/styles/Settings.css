@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .settings {
+    display: block;
+    position: relative;
+  }
+  .settings h3 {
+    padding: 3rem 0;
+    font-size: 2rem;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .form .form-part,
+  .form .message-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin-bottom: 4%;
+  
+  }
+  .form .form-part input{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 10%;
+  }
+  .form .password-prompt{
+    cursor: pointer;
+    right: 2%;
+    position: absolute;
+    font-size: 1.6rem;
+    font-style: normal;
+  }
+  .form .password-prompt::after{
+    display: block;
+    content: '\f059';
+    font-family: "Font Awesome 5 Free";
+  }
+  .form .password-prompt-active::before{
+    padding:35%;
+    background-color: white;
+    text-align: left;
+    width: 900%;
+    bottom: -100%;
+    color: white;
+    transform: translateY(-50%);
+    /* border: 2px solid black; */
+    background-color: cadetblue;
+    position: absolute;
+    right: 100%;
+    
+    z-index: 2;
+    overflow-wrap: break-word;
+    font-size: .9rem;
+    content:"Hasło\00a0musi\00a0zawierać\00a0małe\00a0i\00a0wielkie litery,\00a0""cyfry,\00a0znaki\00a0specjalne\00a0i\00a0nie może\00a0zawierać\00a0spacji.";
+    border-radius: .5rem;
+    border-bottom-right-radius: 0;
+
+  }
+.delete-button{
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin-bottom: 4%;
+    padding: 8px 20px;
+    background-color: transparent;
+        border: .1rem solid black;
+}
+  .form
+  .input-error{
+    border: 0.1rem solid red;
+  }
+  .form .input-password{
+    position: absolute;
+    
+  }
+
+  .message-content {
+    height: 15vh;
+  }
+  .form .update-button {
+    display: block;
+    padding: 8px 20px;
+    border: 0.1rem solid black;
+  }
+  @media (min-width: 568px) {
+    .form input,
+    .form .message-content {
+      margin-bottom: 1%;
+    }
+    .message-content {
+      height: 30vh;
+    }
+  }
+  @media (min-width: 768px) and (orientation: portrait) {
+    .form input,
+    .form .message-content {
+      margin-bottom: 4%;
+    }
+    .message-content {
+      height: 20vh;
+    }
+  }
+  @media (min-width: 1024px) {
+    .settings {
+      padding-top: 10%;
+    }
+    .form {
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 50%;
+      margin-top: 3%;
+    }
+    .form input {
+      width: 45%;
+      position: relative;
+      margin-bottom: 4%;
+    }
+    .delete-button{
+        width: 40%;
+        padding:  10px 30px;
+    }
+    .form .input-name {
+      margin-left: 10%;
+    }
+    .form .message-content {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      margin-bottom: 4%;
+    }
+  
+    .form .update-button {
+      position: relative;
+      padding: 10px 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  @media (min-width: 1024px) and (orientation: portrait) {
+    .settings {
+      padding-top: 20%;
+    }
+    .form {
+      width: 70%;
+    }
+    .form {
+      height: 40vh;
+    }
+    .form .message-content {
+      height: 70%;
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .settings h3 {
+      font-size: 3rem;
+    }
+  }
+  
